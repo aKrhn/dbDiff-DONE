@@ -23,18 +23,17 @@ $_SESSION['dbname1'] = $database1;
 $_SESSION['dbname2'] = $database2;
 
 function createDBInstance($host, $database, $user, $password) {
-  try {
-      return new PDO("mysql:host=$host;dbname=$database",$user,$password);
-  } catch(PDOException $e) {
-      die('Could not connect to the database:' . $e);
+  try
+  {
+    return new PDO("mysql:host=$host;dbname=$database",$user,$password);
+  }
+  catch(PDOException $e)
+  {
+    die('Could not connect to the database:' . $e);
   }
 }
 
 $dbd1 = createDBInstance($host1, $database1, $user1, $password1);
-echo "<br>";
-var_dump($db1);
-echo "</br>";
-
 $cn1 = $dbd1 -> query("SHOW TABLES;")-> fetchAll(PDO::FETCH_ASSOC);
 $count1 = count($cn1);
 $dbd2 = createDBInstance($host2, $database2, $user2, $password2);

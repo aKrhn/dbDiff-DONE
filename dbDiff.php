@@ -1,9 +1,7 @@
 <?php
 include 'config.php';
-$dbd1 = createDBInstance($database1);
 $cn1 = $dbd1 -> query("SHOW TABLES;")-> fetchAll(PDO::FETCH_ASSOC);
 $count1 = count($cn1);
-$dbd2 = createDBInstance($database2);
 $cn2 = $dbd2 -> query("SHOW TABLES;") -> fetchAll(PDO::FETCH_ASSOC);
 $count2 = count($cn2);
 

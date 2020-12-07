@@ -1,10 +1,10 @@
 <?php
 include 'config.php';
 $commonCT = count($common);
-function getColumnsFromTable($database)
+function getColumnsFromTable($host, $database, $user, $password)
 {
 	global $common, $commonCT;
-	$dbc = createDBInstance($database);
+	$dbc = createDBInstance($host, $database, $user, $password);
 	for ($i=0; $i < $commonCT ; $i++)
 	{
 		$query = "SELECT COLUMN_NAME, TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '$common[$i]' AND TABLE_SCHEMA = '$database';";
@@ -18,8 +18,8 @@ function getColumnsFromTable($database)
 	return $tempColumn;
 }
 
-$col1 = getColumnsFromTable($database1);
-$col2 = getColumnsFromTable($database2);
+$col1 = getColumnsFromTable($host1, $database1, $user1, $password1);
+$col2 = getColumnsFromTable($host2, $database2, $user2, $password2);
 
 function columnsIntersect()
 {
