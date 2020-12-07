@@ -12,11 +12,11 @@
 			  <div class="form-group">
 			  	<br><h4>Database 1</h4><br>
     			<h5>Database Username :</h5>
-    			<input type="text" class="form-control" name="user" value="<?php echo $_SESSION['user']; ?>">
+    			<input type="text" class="form-control" name="user1" value="<?php echo $_SESSION['user1']; ?>">
   			</div>
   			<div class="form-group">
     			<h5>Database Password :</h5>
-    			<input type="text" class="form-control" name="password" value="<?php echo $_SESSION['password']; ?>">
+    			<input type="text" class="form-control" name="password1" value="<?php echo $_SESSION['password1']; ?>">
   			</div>
   			<div class="form-group">
     			<h5>Database Name :</h5>
@@ -24,7 +24,7 @@
   			</div>
   			<div class="form-group">
     			<h5>Database Host :</h5>
-    			<input type="text" class="form-control" name="host" value="<?php echo $_SESSION['host']; ?>">
+    			<input type="text" class="form-control" name="host1" value="<?php echo $_SESSION['host1']; ?>">
   			</div>
 			</div>
 			<div class="col-2">
@@ -33,11 +33,11 @@
 				<div class="form-group">
 			  	<br><h4>Database 2</h4><br>
     			<h5>Database Username :</h5>
-    			<input type="text" class="form-control" name="user" value="<?php echo $_SESSION['user']; ?>">
+    			<input type="text" class="form-control" name="user2" value="<?php echo $_SESSION['user2']; ?>">
   			</div>
   			<div class="form-group">
     			<h5>Database Password :</h5>
-    			<input type="text" class="form-control" name="password" value="<?php echo $_SESSION['password']; ?>">
+    			<input type="text" class="form-control" name="password2" value="<?php echo $_SESSION['password2']; ?>">
   			</div>
   			<div class="form-group">
     			<h5>Database Name :</h5>
@@ -45,7 +45,7 @@
   			</div>
   			<div class="form-group">
     			<h5>Database Host :</h5>
-    			<input type="text" class="form-control" name="host" value="<?php echo $_SESSION['host']; ?>">
+    			<input type="text" class="form-control" name="host2" value="<?php echo $_SESSION['host2']; ?>">
   			</div>
 			</div>
 			  <button
